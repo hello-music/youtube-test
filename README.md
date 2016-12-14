@@ -77,6 +77,8 @@ Go to browser: localhost:8080
  - Add tests
  - UI/UX improvements
  - sri integrity
+ - universal ajax
+ - ajax error handling
 
 License
 ----
