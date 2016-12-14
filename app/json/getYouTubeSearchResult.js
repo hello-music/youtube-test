@@ -1,9 +1,9 @@
 import axios from 'axios';
 import Constants from 'config/constans';
-const {getGoogleAutoSuggestUrl} = Constants;
+const {getYoutubeSearchUrl} = Constants;
 
 const jsonGetYouTubeSearchResult = query => {
-  return axios.get(getGoogleAutoSuggestUrl(query));
+  return axios.get(getYoutubeSearchUrl(query));
 };
 
 export default jsonGetYouTubeSearchResult;

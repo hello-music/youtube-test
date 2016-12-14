@@ -1,9 +1,12 @@
 import React from 'react';
 import { HomePage } from 'components';
+import { jsonGetYouTubeSearchResult } from 'json';
 
 class HomePageContainer extends React.Component {
   handleOptionSelected (value) {
-    console.log('value: ', value);
+    jsonGetYouTubeSearchResult(value).then(data => {
+      console.log('data2', data);
+    });
   }
 
   render () {

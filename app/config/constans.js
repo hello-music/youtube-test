@@ -8,6 +8,6 @@ export default {
     return `${api.googleAutoSuggestURL}${query}`;
   },
   getYoutubeSearchUrl (query) {
-    return `${api.googleAutoSuggestURL}${query}`;
+    return `${api.youTubeSearchUrl}${query}`;
   },
 };
