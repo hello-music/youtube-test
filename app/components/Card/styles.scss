@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  font-size: 12px;
+  height: 100px;
+  width: 300px;
+  p {
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    word-break: break-word;
+    height: 50%;
+    overflow: hidden;
+  }
+}
+
+.cardImg {
+  width: 30%;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 50%;
+}
+
+.saveButton {
+  width: 20%;
+}

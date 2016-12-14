@@ -13,6 +13,7 @@ class AutoCompleteContainer extends React.Component {
       options: [],
     };
     this.handleUpdateQuery = this.handleUpdateQuery.bind(this);
+    this.handleOptionSelected = this.handleOptionSelected.bind(this);
   }
 
   handleUpdateQuery (e) {
@@ -20,7 +21,22 @@ class AutoCompleteContainer extends React.Component {
     this.setState({
       query: inputValue,
     });
-    this.fetchOptions(inputValue);
+    if (e.key === 'Enter') {
+      this.handleOptionSelected(inputValue);
+      this.setState({
+        options: [],
+      });
+    }
+    else {
+      this.fetchOptions(inputValue);
+    }
+  }
+
+  handleOptionSelected (inputValue) {
+    this.setState({
+      query: inputValue,
+    });
+    this.props.onOptionSelected(inputValue);
   }
 
   fetchOptions (inputValue) {
@@ -42,9 +58,10 @@ class AutoCompleteContainer extends React.Component {
     return (
       <div>
         <Typeahead
+          value={this.state.query}
           options={this.state.options}
           placeholder='Search on YouTube'
-          onOptionSelected={this.props.onOptionSelected}
+          onOptionSelected={this.handleOptionSelected}
           onKeyUp={this.handleUpdateQuery} />
       </div>
     );
