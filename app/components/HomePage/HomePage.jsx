@@ -1,9 +1,15 @@
-import React from 'react';
-import { test } from './styles.scss';
+import React, { PropTypes } from 'react';
+import { AutoCompleteContainer } from 'containers';
+import { pageContainer, autoCompleteContainer } from './styles.scss';
 
-const HomePage = () => (
-  <div className={test}>
-    <h3>{`Hello world!`}</h3>
+const HomePage = props => (
+  <div className={pageContainer}>
+    <div className={autoCompleteContainer}><AutoCompleteContainer onOptionSelected={props.onOptionSelected}/></div>
   </div>
 );
+
+HomePage.propTypes = {
+  onOptionSelected: PropTypes.func,
+};
+
 export default HomePage;

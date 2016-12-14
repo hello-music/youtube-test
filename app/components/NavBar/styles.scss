@@ -1,0 +1,17 @@
+@import "../../sharedStyles/styles";
+
+.navBar {
+  composes: fullWidth from 'sharedStyles/styles.scss';
+  height: 80px;
+  background-color: rgba($primary-color, $primary-color-opacity);
+  display: flex;
+}
+
+.navBar a {
+  color: $font-color;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+}

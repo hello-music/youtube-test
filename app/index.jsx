@@ -9,7 +9,7 @@ import { routerReducer, syncHistoryWithStore } from 'react-router-redux';
 import { browserHistory } from 'react-router';
 
 const store = createStore(
-  combineReducers({ ...reducers, routing: routerReducer }),
+  combineReducers({...reducers, routing: routerReducer}),
   compose(
     applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : f => f

@@ -1,0 +1,5 @@
+.main {
+  composes: fullHeight from 'sharedStyles/styles.scss';
+  composes: fullWidth from 'sharedStyles/styles.scss';
+  position: absolute;
+}

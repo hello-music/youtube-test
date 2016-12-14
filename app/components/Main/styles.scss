@@ -1,0 +1,5 @@
+.pageContainer{
+  composes: fullWidth from 'sharedStyles/styles.scss';
+  composes: fullHeight from 'sharedStyles/styles.scss';
+  position: absolute;
+}

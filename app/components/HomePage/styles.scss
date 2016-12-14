@@ -1,3 +1,14 @@
-.test{
-  background: green;
+@import "../../sharedStyles/styles";
+
+.pageContainer{
+  background-color: rgba($primary-color, $primary-color-opacity);
+  composes: fullWidth from 'sharedStyles/styles.scss';
+  composes: fullHeight from 'sharedStyles/styles.scss';
+  display: flex;
+  justify-content: center;
+}
+
+.autoCompleteContainer{
+  margin-top: 25%;
+  width: 70%
 }

@@ -6,9 +6,9 @@ export default function getRoutes (history) {
   return (
     <Router history={history}>
       <Route path='/' component={MainContainer}>
-        <IndexRoute component={HomePageContainer}/>
-        <Route path='favourites' component={FavouritesPageContainer}/>
-        <Route path='*' component={HomePageContainer}/>
+        <IndexRoute component={HomePageContainer} />
+        <Route path='favourites' component={FavouritesPageContainer} />
+        <Route path='*' component={HomePageContainer} />
       </Route>
     </Router>
   );

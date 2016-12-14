@@ -1,12 +1,16 @@
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
+import { NavBar } from 'components';
+import { main } from './styles.scss';
 
 class MainContainer extends React.Component {
 
   render () {
     return (
       <div>
-        <h3>{`Main`}</h3>
-        {this.props.children}
+        <NavBar />
+        <div className={main}>
+          {this.props.children}
+        </div>
       </div>
     );
   }

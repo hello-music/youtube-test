@@ -15,6 +15,7 @@
 │   │   ├── /constants.js       # Mock response and other constants
 │   │   ├── /routes.js          # Handles routing 
 ├── /containers/                # React component containers that have only business logic and render stateless functional components
+├── /json/                      # ajax apis
 ├── /helpers/                   # Helper functions/utilities
 │   ├── api.js                  # Fetch data
 ├── /redux/                     # Redux
@@ -41,6 +42,9 @@
 - Immutable - **make states immutable and having performance benefits**
 - Redux-thunk - **function blocks of actions**
 - React-router-redux - **add url to redux store**
+- React-typeahead - **auto complete**
+- Axios - **ajax requests**
+- JSONP - **jsonp ajax requests to avoid cross origin issues**
 
 #### Bundling/Server
 - Webpack
